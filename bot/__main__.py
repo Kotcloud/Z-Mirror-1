@@ -48,15 +48,15 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Report Group", "https://t.me/Mltb_chat_unofficial")
-    buttons.buildbutton("Repo", "https://github.com/Dawn-India/Z-Mirror")
-    buttons.buildbutton("Mirror Group", "https://t.me/z_mirror")
-    buttons.buildbutton("Owner", "https://t.me/z_mirror")
+    buttons.buildbutton("DEVELOPER", "https://t.me/KOT_FREE_DE_LA_HOYA_OFF")
+    buttons.buildbutton("BOTS CHANNEL", "https://t.me/KOT_BOTS")
+    buttons.buildbutton("MIRROR GROUP", "https://t.me/KOT_MIRROR_ZONE")
+    buttons.buildbutton("TEAM", "https://t.me/KOT_LINKS_TEAM")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome | {TITLE_NAME} BOT is ready for you
-Type /{BotCommands.HelpCommand} to get a list of available commands
+Welcome Bro | {TITLE_NAME} BOT Will Send Files/Mirror Links In Your PM and Group
+ If You Need To Create Like This Bot PM  @KOT_FREE_DE_LA_HOYA_OFF | @KOT_BOTS | #TEAM-@KOT_LINKS_TEAM
                         '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
