@@ -55,9 +55,11 @@ def start(update, context):
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome Bro | {TITLE_NAME} BOT Will Send Files/Mirror Links In Your PM and Group
- If You Need To Create Like This Bot PM  @KOT_FREE_DE_LA_HOYA_OFF | @KOT_BOTS | #TEAM-@KOT_LINKS_TEAM
-                        '''
+Hᴇʏ Bʀᴏ 🙋‍♂️ Aʟʟ Tʜᴇ Uᴘʟᴏᴀᴅᴇᴅ Lᴇᴇᴄʜ/Mɪʀʀᴏʀ Cᴏɴᴛᴇɴᴛs Wɪʟʟ Sᴇɴᴅ Hᴇʀᴇ Iɴ Yᴏᴜʀ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ Fʀᴏᴍ Nᴏᴡ 
+
+Tʜᴀɴᴋ Fᴏʀ Usɪɴɢ Mᴇʜ 😈/😇 
+   #SʜɪɴCʜᴀɴ✗Cʟᴏᴜᴅ
+                '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
         sendMarkup('Sorry, You cannot use me! Make your own.', context.bot, update.message, reply_markup)
